@@ -1,0 +1,18 @@
+// Nome do Aluno
+var nome = "Pedro";
+
+//Variaveis das notas do Aluno
+var notaPrimeiroBimestre = 9;
+var notaSegundoBimestre = 7;
+var notaTerceiroBimestre = 4;
+var notaQuartoBimestre = 2;
+
+//Variavel de nota
+var notaFinal = (notaPrimeiroBimestre + notaSegundoBimestre + notaTerceiroBimestre +notaQuartoBimestre) /4;
+
+//to.Fixed é o comando usado para definir o valor das casas decimais
+var notaFixada = notaFinal.toFixed(0);
+
+//console.log, usado para printar na tela
+console.log(notaFixada);
+console.log("Bem vindo " + nome);
