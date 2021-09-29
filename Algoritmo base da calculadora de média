@@ -1,28 +1,25 @@
-// Nome do Aluno
-var nome = "Pedro";
+//var nome = "Pedro";
+//document.write("<b>" + nome + "</b>");
 
-//console.log, usado para printar na tela
-console.log("Bem vindo " + nome);
-
-//Variaveis das notas do Aluno
-var notaPrimeiroBimestre = 5;
+var notaPrimeiroBimestre = 10;
 var notaSegundoBimestre = 7;
 var notaTerceiroBimestre = 4;
 var notaQuartoBimestre = 2;
 
-//Variavel de nota
-var notaFinal =
+var notaFinal = (
   (notaPrimeiroBimestre +
     notaSegundoBimestre +
     notaTerceiroBimestre +
     notaQuartoBimestre) /
-  4;
+  4
+).toFixed(0);
 
-//to.Fixed é o comando usado para definir o valor das casas decimais
-var notaFixada = notaFinal.toFixed(0);
-
-if (notaFixada >= 6) {
-  console.log("Você está aprovado!! Sua nota é " + notaFixada);
+if (notaFinal >= 6) {
+  document.write(
+    "<h2>" + "Você está aprovado!! Sua nota é " + notaFinal + "</h2"
+  );
 } else {
-  console.log("Você está reprovado!! Sua nota é " + notaFixada);
+  document.write(
+    "<h2>" + "Você está reprovado!! Sua nota é " + notaFinal + "</h2>"
+  );
 }
